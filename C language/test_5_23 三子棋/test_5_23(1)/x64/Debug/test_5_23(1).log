@@ -1,0 +1,5 @@
+﻿  game.c
+D:\C language\test_5_23(1)\test_5_23(1)\game.c(5,28): warning C4028: 形参 1 与声明不一致
+D:\C language\test_5_23(1)\test_5_23(1)\game.c(29,5): warning C4013: “printf”未定义；假设外部返回 int
+D:\C language\test_5_23(1)\test_5_23(1)\game.c(61,3): warning C4013: “scanf”未定义；假设外部返回 int
+  test_5_23(1).vcxproj -> D:\C language\test_5_23(1)\x64\Debug\test_5_23(1).exe

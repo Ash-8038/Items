@@ -1,0 +1,5 @@
+﻿  test.c
+D:\C language\test_5_31 左旋转字符串\test_5_31 左旋转字符串\test.c(23,2): warning C4098: “left_rotate”:“void”函数返回值
+D:\C language\test_5_31 左旋转字符串\test_5_31 左旋转字符串\test.c(28,2): warning C4013: “gets”未定义；假设外部返回 int
+D:\C language\test_5_31 左旋转字符串\test_5_31 左旋转字符串\test.c(31,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  test_5_31 左旋转字符串.vcxproj -> D:\C language\test_5_31 左旋转字符串\x64\Debug\test_5_31 左旋转字符串.exe
