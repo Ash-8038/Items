@@ -1,0 +1,78 @@
+C51 COMPILER V9.57.0.0   MAIN__                                                            06/19/2025 13:11:27 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE MAIN__
+OBJECT MODULE PLACED IN .\Objects\main‘.obj
+COMPILER INVOKED BY: D:\keil 5 project\C51\BIN\C51.EXE main‘.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\List
+                    -ings\main‘.lst) OBJECT(.\Objects\main‘.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include <ADC.H>
+   3          #include <LCD.H>
+   4          #include <Delay.h>
+   5          #include <TIMER_0.h>
+   6          //5v参考电压，12位分辨率。
+   7          unsigned int XPT2046_Data;
+   8          unsigned char Data;
+   9          void main()
+  10          {
+  11   1              TIMER_0_INIT();
+  12   1              while(1)
+  13   1              {
+  14   2                      XPT2046_Data=XPT2046_READ(XPT2046_XP1);
+  15   2      //              Data=XPT2046_Data%10;
+  16   2      //              LCD(4,Data);
+  17   2      //              Delay1();
+  18   2      //              Data=(XPT2046_Data/10)%10;
+  19   2      //              LCD(3,Data);
+  20   2      //              Delay1();
+  21   2      //              Data=(XPT2046_Data/100)%10;
+  22   2      //              LCD(2,Data);
+  23   2      //              Delay1();
+  24   2      //              Data=(XPT2046_Data/1000)%10;
+  25   2      //              LCD(1,Data);
+  26   2      //              Delay1();
+  27   2              }
+  28   1      }
+  29          
+  30          void TIMER_0_ISR()   interrupt 1
+  31          {
+  32   1              TL0 = 0x00;             
+  33   1              TH0 = 0xDC;     
+  34   1      
+  35   1                      Data=XPT2046_Data%10;
+  36   1                      LCD(4,Data);
+  37   1                      Delay1();
+  38   1                      Data=(XPT2046_Data/10)%10;
+  39   1                      LCD(3,Data);
+  40   1                      Delay1();
+  41   1                      Data=(XPT2046_Data/100)%10;
+  42   1                      LCD(2,Data);
+  43   1                      Delay1();
+  44   1                      Data=(XPT2046_Data/1000)%10;
+  45   1                      LCD(1,Data);
+  46   1                      Delay1();
+  47   1              
+  48   1      }       
+  49          
+  50          
+  51          
+  52          
+
+
+C51 COMPILER V9.57.0.0   MAIN__                                                            06/19/2025 13:11:27 PAGE 2   
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    181    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

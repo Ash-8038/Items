@@ -1,0 +1,8 @@
+".\Objects\main¡®.obj",
+".\Objects\ADC.obj",
+".\Objects\Delay.obj",
+".\Objects\LCD.obj",
+".\Objects\TIMER_0.obj" 
+TO ".\Objects\project" 
+PRINT(".\Listings\project.m51") RAMSIZE(256) 
+DISABLEWARNING (16) 

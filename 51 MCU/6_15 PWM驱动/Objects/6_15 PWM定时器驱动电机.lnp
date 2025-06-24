@@ -1,0 +1,6 @@
+".\Objects\main.obj",
+".\Objects\TIMER_0.obj",
+".\Objects\LCD.obj",
+".\Objects\key.obj" 
+TO ".\Objects\6_15 PWM定时器驱动电机" 
+PRINT(".\Listings\6_15 PWM定时器驱动电机.m51") RAMSIZE(256) 

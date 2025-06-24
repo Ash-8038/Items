@@ -1,0 +1,3 @@
+".\Objects\main.obj" 
+TO ".\Objects\6_10串口发送" 
+PRINT(".\Listings\6_10串口发送.m51") RAMSIZE(256) 

@@ -1,0 +1,6 @@
+".\Objects\main.obj",
+".\Objects\IIC.obj",
+".\Objects\AT24C02.obj" 
+TO ".\Objects\6_13 IIC通信" 
+PRINT(".\Listings\6_13 IIC通信.m51") RAMSIZE(256) 
+DISABLEWARNING (16) 

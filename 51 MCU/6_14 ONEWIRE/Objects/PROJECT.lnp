@@ -1,0 +1,6 @@
+".\Objects\MAIN.obj",
+".\Objects\one wire.obj",
+".\Objects\DS18B20.obj" 
+TO ".\Objects\PROJECT" 
+PRINT(".\Listings\PROJECT.m51") RAMSIZE(256) 
+DISABLEWARNING (16) 
